@@ -1,15 +1,19 @@
+import { Links } from "../Components/Links";
+
 export const AboutMe = () => {
   return (
     <div class="about-me">
+      <h2>Junior Developer</h2>
+      <h3>Full Stack</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Since graduating from Northcoders in March 2025, I have been looking for
+        my first paid job as a Junior Developer. In the meantime, I have been
+        working as an intern at Digital Edge (where I have been learning how to
+        work in a commercial envrioment along side clients and other
+        developers), working on my portfolio, and keeping my coding skills sharp
+        as well as up-to-date.
       </p>
+      <Links />
     </div>
   );
 };

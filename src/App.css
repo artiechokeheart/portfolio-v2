@@ -14,9 +14,8 @@
   position: fixed;
   overflow: hidden;
   top: 0;
-  width: 100%;
+  width: 100vw;
   box-shadow: 10px 5px 50px #ff0000;
-  justify-content: space-between;
 }
 
 h1 {
@@ -37,4 +36,12 @@ h1 {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me > p {
+  padding-left: 25em;
+  padding-right: 25em;
+  text-align: justify;
 }
