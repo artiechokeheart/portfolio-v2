@@ -1,31 +1,29 @@
+import { Link } from "react-router-dom";
 import GitLogo from "../assets/github-mark-white.svg";
 import LinkedinLogo from "../assets/InBug-White.png";
-import { Link } from "react-router-dom";
 
 export const Links = () => {
   return (
     <div className="socials">
-      <button>
+      <a href="https://www.linkedin.com/in/artemis-wilkinson-61a271340">
         <img
+          className="linkedin"
+          src={LinkedinLogo}
+          alt="LinkedIn logo"
+          width={"55"}
+          height={"55"}
+        />
+      </a>
+
+      <Link to={"https://github.com/artiechokeheart"} target="_blank">
+        <img
+          className="github"
           src={GitLogo}
           alt="github logo"
-          width={"85"}
-          height={"85"}
-          href="https://github.com/artiechokeheart"
+          width={"55"}
+          height={"55"}
         />
-      </button>
-      {/* <Link to={{ pathname: "https://herewecode.io/" }} target="_blank">
-        Click to open HereWeCode (new tab)
-      </Link> */}
-      <button>
-        <img
-          src={LinkedinLogo}
-          alt="github logo"
-          href="https://github.com/artiechokeheart"
-          width={"85"}
-          height={"85"}
-        />
-      </button>
+      </Link>
     </div>
   );
 };
