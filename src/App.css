@@ -45,3 +45,29 @@ h1 {
   padding-right: 25em;
   text-align: justify;
 }
+
+.project-container {
+  border: 5px solid #00a4bd;
+}
+.project-intro {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-status {
+  align-content: center;
+}
+
+.project-tools {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1%;
+}
+
+.project-description {
+  padding-left: 20em;
+  padding-right: 20em;
+  text-align: justify;
+}
