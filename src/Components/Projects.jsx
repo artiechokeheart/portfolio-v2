@@ -10,7 +10,7 @@ export const Projects = () => {
       <div className="project-container">
         <div className="project-intro">
           <h2>NC News</h2>
-          <div className="project-status">Deployed</div>
+          <div className="project-status">JOB COMPLETE</div>
         </div>
         <div className="project-tools">
           <div className="tool">Node.js</div>
