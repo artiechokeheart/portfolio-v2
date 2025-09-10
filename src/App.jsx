@@ -12,7 +12,7 @@ function App() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className="main-container">
         <AboutMe />
         <SkillTree />
         <Projects />
