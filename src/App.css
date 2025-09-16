@@ -42,10 +42,9 @@ h1 {
 
 
 .navigation {
-  display: flex;
-  gap: 1rem;
-  align-content: center;
-
+align-self: center;
+display: flex;
+gap: 1rem;
 }
 
 .navigation > button {
@@ -57,11 +56,10 @@ h1 {
   transition: border-color 0.25s;
   width: fit-content;
   height: fit-content;
-  align-self: center;
 }
 
-.navigation > button:hover {
- 
+button:hover {
+
   box-shadow:
     0 0 50px #fff,            /* outer white */
     -10px 0 80px #f0f,        /* outer left magenta */

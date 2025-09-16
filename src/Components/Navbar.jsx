@@ -3,15 +3,18 @@ import { HashLink } from 'react-router-hash-link';
 export const Navbar = () => {
   return (
     <nav className="navigation">
+       <HashLink smooth to="#about-me">
       <button>
-        <HashLink smooth to="#about-me">About Me</HashLink>
+       About Me
       </button>
+       </HashLink>
+     
+        <HashLink smooth to="#skill-tree"><button>Skill Tree</button></HashLink>
+        <HashLink smooth to="#projects">
       <button>
-        <HashLink smooth to="#skill-tree">Skill Tree</HashLink>
+        Projects
       </button>
-      <button>
-        <HashLink smooth to="#projects">Projects</HashLink>
-      </button>
+        </HashLink>
     </nav>
   );
 };
