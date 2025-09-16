@@ -1,6 +1,6 @@
 export const SkillTree = () => {
   return (
-    <section>
+    <section id="skill-tree">
       <Circuit />
     </section>
   );

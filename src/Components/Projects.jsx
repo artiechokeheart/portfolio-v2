@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects-heading">
         <h3>Projects</h3>
         <p>Here are some of my projects</p>
