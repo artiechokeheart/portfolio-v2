@@ -9,8 +9,8 @@ export const SkillTree = () => {
 const Circuit = () => {
   return (
     <svg
-      width="1244"
-      height="695"
+      width="inherit"
+      height="inherit"
       viewBox="0 0 1244 695"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
