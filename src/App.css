@@ -40,7 +40,6 @@ h1 {
   box-shadow: 10px 5px 50px #ff0000;
 }
 
-
 .navigation {
 align-self: center;
 display: flex;
@@ -67,6 +66,21 @@ button:hover {
 
 }
 
+
+
+.about-me-section {
+  grid-area: main;
+}
+.about-me {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me > p {
+  max-width: 60vw;
+  text-align: justify;
+}
 .socials {
   display: flex;
   flex-direction: row;
@@ -76,16 +90,6 @@ button:hover {
   align-content: center;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me > p {
-  padding-left: 25em;
-  padding-right: 25em;
-  text-align: justify;
-}
 
 .project-container {
   border: 5px solid #00a4bd;
