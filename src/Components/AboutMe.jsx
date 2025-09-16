@@ -2,8 +2,8 @@ import { Links } from "../Components/Links";
 
 export const AboutMe = () => {
   return (
-    <div className="about-me-section">
-      <div className="about-me-headings">
+    <div className="about-me-section" id="about-me">
+      <div className="about-me-headings" >
         <h2>Junior Developer</h2>
         <h3>Full Stack</h3>
       </div>
