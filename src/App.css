@@ -6,38 +6,38 @@
   /* min-width: 200px; */
 }
 
-.app {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 64px 1fr 48px;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-}
 
-h1 {
-  align-content: center;
-}
 
-.header {
-  grid-area: header;
-}
+/* .app {
+display: grid;
+grid-template-columns: 200px 1fr;
+grid-template-rows: var(--header-h) 1fr 48px;
+grid-template-areas:
+"header header"
+"sidebar main"
+"footer footer";
+min-height: 100vh;
+font-family: Arial, sans-serif;
 
-.head-container {
-  background-image: linear-gradient(
-    #090817 81%,
-    rgb(172, 6, 6) 100%
-  );
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  width: 100vw;
-  box-shadow: 10px 5px 50px #ff0000;
+} */
+
+
+.header-container {
+    grid-area: header;
+    background-image: linear-gradient(
+      #090817 81%,
+      rgb(255, 255, 255) 150%
+      );
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+  box-shadow:
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;
+          scroll-padding-top: 500px;
 }
 
 .navigation {
@@ -69,17 +69,36 @@ button:hover {
 
 
 .about-me-section {
-  grid-area: main;
-}
-.about-me {
-  align-items: center;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
+
+}
+
+.about-me {
+  align-self: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.about-me-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 1%;
+}
+
+.about-me-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
 }
 
 .about-me > p {
-  max-width: 60vw;
+  max-width: 70vw;
   text-align: justify;
+  align-self: center;
 }
 .socials {
   display: flex;
@@ -115,3 +134,7 @@ button:hover {
   text-align: justify;
 }
 
+svg {
+  padding-left: 1%;
+  padding-right: 1%;
+}

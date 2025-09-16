@@ -8,16 +8,19 @@ import { Footer } from "./Components/Footer";
 
 function App() {
   return (
-    <div>
-      <header>
+
+    <div className="app">
+      <header className="site-header">
         <Header />
       </header>
+
       <main className="main-container">
         <AboutMe />
         <SkillTree />
         <Projects />
       </main>
-      <footer>
+
+      <footer className="site-footer">
         <Footer />
       </footer>
     </div>

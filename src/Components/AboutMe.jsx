@@ -1,11 +1,16 @@
 import { Links } from "../Components/Links";
+import myFace from "../assets/my_face.jpg";
+
 
 export const AboutMe = () => {
   return (
     <div className="about-me-section" id="about-me">
+      <div className="about-me-header">
       <div className="about-me-headings" >
         <h2>Junior Developer</h2>
         <h3>Full Stack</h3>
+      </div>
+        <img src={myFace} alt={"My Face"} width={250} height={250} />
       </div>
       <div className="about-me">
         <p className="about-me-paragraph">
