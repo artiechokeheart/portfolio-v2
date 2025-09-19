@@ -4,6 +4,7 @@
   margin: 0 auto;
   text-align: center;
   /* min-width: 200px; */
+  --main-borders: 5px solid #27feff;
 }
 
 
@@ -111,28 +112,74 @@ button:hover {
 
 
 .project-container {
-  border: 5px solid #00a4bd;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title status"
+    "tools tools status"
+    "body body body"
+    "links empty empty";
+  padding: 1%;
+  border: 5px solid cyan;
+  gap: 1rem;
+  margin: 1%;
 }
-.project-intro {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+
+.project-title {
+  grid-area: title;
+  border: 5px solid cyan;
 }
 
 .project-status {
-  align-content: center;
+  grid-area: status;
+  border: 5px solid cyan;
+  display: flex;              
+  justify-content: center;     
+  align-items: center;        
+  padding: 1%;
 }
 
-.project-tools {
+.project-body { grid-area: body;
   display: flex;
+  padding-left: 2.5%;
   justify-content: center;
   align-content: center;
-  gap: 1%;
+  gap: 2%;
 }
 
-.project-description {
-  text-align: justify;
+
+.project-images { grid-area: images;
+justify-content: center;
+align-content: center;
+border: 5px solid cyan;
+ }
+
+.project-tools { grid-area: tools;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+
+.project-description { grid-area: description;
+ border: 1px solid cyan;
+ padding: 1%;
+ justify-content: center;
+ align-content: center; 
+ text-align: justify;
 }
+.project-links { grid-area: links;
+padding: 2%;
+margin-bottom: 1%;
+display: flex;
+justify-content: start;
+align-content: center;
+gap: 10%;
+ }
+
+ .project-links > a {
+  justify-content: center; ;
+  border: 1px solid cyan;
+  padding: 2%;
+ }
 
 svg {
   padding-left: 1%;
