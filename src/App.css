@@ -7,8 +7,6 @@
   --main-borders: 5px solid #27feff;
 }
 
-
-
 /* .app {
 display: grid;
 grid-template-columns: 200px 1fr;
@@ -22,29 +20,23 @@ font-family: Arial, sans-serif;
 
 } */
 
-
 .header-container {
-    grid-area: header;
-    background-image: linear-gradient(
-      #090817 81%,
-      rgb(255, 255, 255) 150%
-      );
-      display: flex;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      width: 100vw;
-  box-shadow:
-    0 0 50px #fff,            /* outer white */
-    -10px 0 80px #f0f,        /* outer left magenta */
-    10px 0 80px #0ff;
-          scroll-padding-top: 500px;
+  grid-area: header;
+  background-image: linear-gradient(#090817 81%, rgb(255, 255, 255) 150%);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
+    /* outer left magenta */ 10px 0 80px #0ff;
+  scroll-padding-top: 500px;
 }
 
 .navigation {
-align-self: center;
-display: flex;
-gap: 1rem;
+  align-self: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .navigation > button {
@@ -59,21 +51,14 @@ gap: 1rem;
 }
 
 button:hover {
-
-  box-shadow:
-    0 0 50px #fff,            /* outer white */
-    -10px 0 80px #f0f,        /* outer left magenta */
-    10px 0 80px #0ff; 
-
+  box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
+    /* outer left magenta */ 10px 0 80px #0ff;
 }
-
-
 
 .about-me-section {
   padding-top: 150px;
   display: flex;
   flex-direction: column;
-
 }
 
 .about-me {
@@ -93,7 +78,7 @@ button:hover {
 .about-me-headings {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .about-me > p {
@@ -110,9 +95,8 @@ button:hover {
   align-content: center;
 }
 
-
 .project-container {
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "title title status"
@@ -133,13 +117,14 @@ button:hover {
 .project-status {
   grid-area: status;
   border: 5px solid cyan;
-  display: flex;              
-  justify-content: center;     
-  align-items: center;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1%;
 }
 
-.project-body { grid-area: body;
+.project-body {
+  grid-area: body;
   display: flex;
   padding-left: 2.5%;
   justify-content: center;
@@ -147,41 +132,45 @@ button:hover {
   gap: 2%;
 }
 
+.project-images {
+  grid-area: images;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid cyan;
+}
 
-.project-images { grid-area: images;
-justify-content: center;
-align-content: center;
-border: 5px solid cyan;
- }
-
-.project-tools { grid-area: tools;
+.project-tools {
+  grid-area: tools;
   display: flex;
   justify-content: space-between;
-  align-content: center; }
-
-.project-description { grid-area: description;
- border: 1px solid cyan;
- padding: 1%;
- justify-content: center;
- align-content: center; 
- text-align: justify;
+  align-content: center;
 }
-.project-links { grid-area: links;
-padding: 2%;
-margin-bottom: 1%;
-display: flex;
-justify-content: start;
-align-content: center;
-gap: 10%;
- }
 
- .project-links > a {
-  justify-content: center; ;
+.project-description {
+  grid-area: description;
+  border: 1px solid cyan;
+  padding: 1%;
+  justify-content: center;
+  align-content: center;
+  text-align: justify;
+}
+.project-links {
+  grid-area: links;
+  padding: 2%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  gap: 10%;
+}
+
+.project-links > a {
+  justify-content: center;
   border: 1px solid cyan;
   padding: 2%;
- }
+}
 
 svg {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-top: 125px;
+  max-width: 95%;
 }
