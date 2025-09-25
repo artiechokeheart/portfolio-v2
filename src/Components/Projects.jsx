@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import news from "../assets/images/nc-news.png"
+import wordslinger from "../assets/images/wordslinger-login.png"
+import business from "../assets/images/business360.png"
+
 
 export const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="projects-heading">
-        <h3>Projects</h3>
-        <p>Here are some of my projects</p>
+        <h2>Projects</h2>
       </div>
       <section className="projects">
         {/* NC News */}
@@ -14,7 +17,7 @@ export const Projects = () => {
             <h2>NC News</h2>
           </div>
           <div className="project-status">
-            MISSION STATUS <br />
+            <h3>MISSION STATUS</h3>
             Job Complete
           </div>
 
@@ -28,6 +31,29 @@ export const Projects = () => {
             <div className="tool">HTML</div>
             <div className="tool">Netlify</div>
             <div className="tool">Render</div>
+          </div>
+
+          
+          <div className="project-links">
+            <button>
+            <Link
+              to="https://artemis-nc-news.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Frontend
+            </Link>
+              </button>
+
+              <button>
+            <Link
+              to="https://artemis-be-news.onrender.com/api"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Backend
+            </Link>
+              </button>
           </div>
 
           <div className="project-body">
@@ -48,28 +74,14 @@ export const Projects = () => {
 
             <div className="project-images">
               <img
-                src="https://images.twinkl.co.uk/tw1n/image/private/t_630_eco/image_repo/46/b0/t-i-1648723616-blank-website-design-template_ver_1.jpeg"
+                src={news}
                 alt="NC News screenshot"
+                width={700}
+                height={400}
               />
             </div>
           </div>
 
-          <div className="project-links">
-            <Link
-              to="https://artemis-nc-news.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Frontend
-            </Link>
-            <Link
-              to="https://artemis-be-news.onrender.com/api"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Backend
-            </Link>
-          </div>
         </div>
 
         {/* Wordslinger */}
@@ -78,10 +90,12 @@ export const Projects = () => {
             <h2>Wordslinger</h2>
           </div>
           <div className="project-status">
-            MISSION STATUS <br />
-            Job Complete <br></br>
-            BONUS MISSION AVALIABLE <br />
-            Restyle ...in Progress
+            <h3>MISSION STATUS</h3> 
+            Job Complete <br />
+            <h3>BONUS MISSION AVALIABLE </h3>
+            Restyle 
+            <br />
+           In Progress
           </div>
 
           <div className="project-tools">
@@ -114,20 +128,27 @@ export const Projects = () => {
 
             <div className="project-images">
               <img
-                src="https://images.twinkl.co.uk/tw1n/image/private/t_630_eco/image_repo/46/b0/t-i-1648723616-blank-website-design-template_ver_1.jpeg"
+                src={wordslinger}
                 alt="Wordslinger screenshot"
+                                width={300}
+                height={500}
               />
             </div>
           </div>
 
           <div className="project-links">
+            <button>
+
             <Link
-              to="https://wordslinger.onrender.com/api/"
+              to="https://wordslinger.onrender.com/api/users"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              >
               Frontend
             </Link>
+              </button>
+              <button>
+
             <Link
               to="https://a-wordslinger.netlify.app/"
               target="_blank"
@@ -135,13 +156,17 @@ export const Projects = () => {
             >
               Backend
             </Link>
+              </button>
+              <button>
+
             <Link
               to="https://youtu.be/_sw5hRN_kWo?si=jdK0aczJmKKmoqkL&t=22"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              >
               Demo Video
             </Link>
+              </button>
           </div>
         </div>
 
@@ -151,13 +176,14 @@ export const Projects = () => {
             <h2>360 Business Connections</h2>
           </div>
           <div className="project-status">
-            MISSION STATUS <br />
+           <h3>MISSION STATUS</h3> <br />
             In Progress
           </div>
 
           <div className="project-tools">
-            <div className="tool">Wix Studio</div>
             <div className="tool">Wix SDK</div>
+            <div className="tool">Wix Studio</div>
+            <div className="tool">Wix IDE</div>
           </div>
 
           <div className="project-body">
@@ -167,7 +193,7 @@ export const Projects = () => {
               </p>
               <p>
                 While Wix is often seen as a low-code or no-code solution to
-                website development, it doesn’t have to be. Wix uses JavaScript,
+                website development, it doesn't have to be. Wix uses JavaScript,
                 Node.js, and MongoDB for its backend, as well as a React-based
                 framework for its frontend. My experience using it has shown me
                 the only time I “drag and drop” is for design and to get
@@ -176,26 +202,31 @@ export const Projects = () => {
               <p>
                 For this website, I created a basic site that searches, filters
                 and sorts businesses. There is a form to add new businesses with
-                full validation that is fully coded using the Wix SDK.
+                full validation that is fully coded within Wix Studio/IDE using the Wix SDK.
               </p>
             </div>
 
             <div className="project-images">
               <img
-                src="https://images.twinkl.co.uk/tw1n/image/private/t_630_eco/image_repo/46/b0/t-i-1648723616-blank-website-design-template_ver_1.jpeg"
+                src={business}
                 alt="360 Business Connections screenshot"
+                width={700}
+                height={400}
               />
             </div>
           </div>
 
           <div className="project-links">
+            <button>
+
             <Link
               to="https://artemisswilkinson.wixstudio.com/360business"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              >
               Website
             </Link>
+              </button>
           </div>
         </div>
 
@@ -203,7 +234,7 @@ export const Projects = () => {
         {/* <div className="project-container">
     <div className="project-title"><h2>Project Title</h2></div>
     <div className="project-status">
-      MISSION STATUS <br />
+      <h3>MISSION STATUS</h3> <br />
       Status Here
     </div>
 

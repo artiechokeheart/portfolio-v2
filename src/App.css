@@ -56,7 +56,7 @@ button:hover {
 }
 
 .about-me-section {
-  padding-top: 150px;
+  padding:2%;
   display: flex;
   flex-direction: column;
 }
@@ -97,46 +97,48 @@ button:hover {
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-areas:
-    "title title status"
-    "tools tools status"
-    "body body body"
-    "links empty empty";
-  padding: 1%;
-  border: 5px solid cyan;
+    "title status status"
+    "tools status status"
+    "links status status"
+    "body body body";
+  padding-left: 15%;
+
+  /* border: 5px solid  #0ff;
+  border-style:groove; */
   gap: 1rem;
   margin: 1%;
+
 }
 
 .project-title {
   grid-area: title;
-  border: 5px solid cyan;
+  /* border: 5px solid cyan; */
 }
 
 .project-status {
   grid-area: status;
-  border: 5px solid cyan;
+  /* border: 5px solid cyan; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .project-body {
   grid-area: body;
   display: flex;
-  padding-left: 2.5%;
   justify-content: center;
   align-content: center;
-  gap: 2%;
+ max-width: 80%;
+
 }
 
 .project-images {
   grid-area: images;
   justify-content: center;
   align-content: center;
-  border: 5px solid cyan;
+  /* border: 5px solid cyan; */
 }
 
 .project-tools {
@@ -144,14 +146,14 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items:center;
 }
 
 .project-description {
   grid-area: description;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   padding: 1%;
-  justify-content: center;
-  align-content: center;
+   justify-content: center;
   text-align: justify;
 }
 .project-links {
@@ -159,9 +161,9 @@ button:hover {
   padding: 2%;
   margin-bottom: 1%;
   display: flex;
-  justify-content: start;
+  justify-content:space-around;
   align-content: center;
-  gap: 10%;
+  gap: 5%;
 }
 
 .project-links > a {
