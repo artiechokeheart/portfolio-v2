@@ -1,33 +1,45 @@
-#root {
+ #root {
   max-width: 100vw;
   min-height: 100vh;
-  margin: 0 auto;
-  text-align: center;
+  /* margin: 0 auto; */
+  text-align: center; 
   /* min-width: 200px; */
-  --main-borders: 5px solid #27feff;
+ /* --main-borders: 5px solid #27feff; */
 }
 
-/* .app {
+.app {
 display: grid;
-grid-template-columns: 200px 1fr;
-grid-template-rows: var(--header-h) 1fr 48px;
+grid-template-columns: 1fr;
 grid-template-areas:
-"header header"
-"sidebar main"
-"footer footer";
+"header header header"
+"main main main"
+"footer footer footer";
 min-height: 100vh;
 font-family: Arial, sans-serif;
+}
 
-} */
+.site-header {
+  grid-area: header;
+}
+
+.site-body {
+ grid-area: main;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.site-footer {
+  grid-area: footer;
+}
 
 .header-container {
-  grid-area: header;
   background-image: linear-gradient(#090817 81%, rgb(255, 255, 255) 150%);
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
     /* outer left magenta */ 10px 0 80px #0ff;
   scroll-padding-top: 500px;
@@ -59,33 +71,34 @@ button:hover {
   padding:2%;
   display: flex;
   flex-direction: column;
+  text-align: left;
+    margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.about-me-headings {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me-image {
+  float: right;
+  margin: 0 0 1rem 2rem;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .about-me {
-  align-self: center;
-  gap: 1rem;
   display: flex;
-}
-
-.about-me-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  gap: 1%;
-}
-
-.about-me-headings {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.about-me > p {
-  max-width: 70vw;
   text-align: justify;
   align-self: center;
+  flex-direction: column;
 }
+
 .socials {
   display: flex;
   flex-direction: row;
@@ -95,25 +108,45 @@ button:hover {
   align-content: center;
 }
 
+.about-me-list {
+  list-style-type: square;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-me-intro {
+    flex-direction: column;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .project-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "title status status"
-    "tools status status"
-    "links status status"
-    "body body body";
-  padding-left: 15%;
+    "title status"
+    "tools status"
+    /* "links status status status" */
+    "body body";
 
   /* border: 5px solid  #0ff;
   border-style:groove; */
   gap: 1rem;
-  margin: 1%;
+
 
 }
 
 .project-title {
   grid-area: title;
+  text-align: start;
   /* border: 5px solid cyan; */
 }
 
@@ -122,16 +155,26 @@ button:hover {
   /* border: 5px solid cyan; */
   display: flex;
   flex-direction: column;
-  justify-content: start;
+
+  text-align: left;
+}
+
+
+.project-tools {
+  grid-area: tools;
+  display: flex;
+  gap: 0.5rem;
+
 }
 
 .project-body {
   grid-area: body;
   display: flex;
-  justify-content: center;
-  align-content: center;
- max-width: 80%;
-
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .project-images {
@@ -139,30 +182,32 @@ button:hover {
   justify-content: center;
   align-content: center;
   /* border: 5px solid cyan; */
+  flex: 1;
 }
 
-.project-tools {
-  grid-area: tools;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items:center;
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  max-height: 500px;
 }
 
 .project-description {
   grid-area: description;
   /* border: 1px solid cyan; */
-  padding: 1%;
-   justify-content: center;
+  flex: 1;
+  padding-right: 2.5%;
+  display: flex;
+  flex-direction: column;
   text-align: justify;
 }
 .project-links {
   grid-area: links;
+  display: flex;
   padding: 2%;
   margin-bottom: 1%;
-  display: flex;
-  justify-content:space-around;
-  align-content: center;
+  justify-content: center;
   gap: 5%;
 }
 
@@ -172,7 +217,13 @@ button:hover {
   padding: 2%;
 }
 
+@media (max-width: 768px) {
+  .project-body, .about-me-intro {
+    flex-direction: column;
+  }
+}
+
 svg {
   padding-top: 125px;
-  max-width: 95%;
+  image-resolution:inherit;
 }

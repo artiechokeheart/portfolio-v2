@@ -13,7 +13,7 @@ function App() {
         <Header />
       </header>
 
-      <main className="main-container">
+      <main className="site-body">
         <SkillTree />
         <AboutMe />
         <Projects />
