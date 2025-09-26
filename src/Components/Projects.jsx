@@ -10,7 +10,6 @@ export const Projects = () => {
       <div className="projects-heading">
         <h2>Projects</h2>
       </div>
-      <section className="projects">
         {/* NC News */}
         <div className="project-container">
           <div className="project-title">
@@ -32,9 +31,9 @@ export const Projects = () => {
             <div className="tool">Netlify</div>
             <div className="tool">Render</div>
           </div>
-
-          
-          <div className="project-links">
+          <div className="project-body">
+            <div className="project-description">
+            <div className="project-links">
             <button>
             <Link
               to="https://artemis-nc-news.netlify.app/"
@@ -55,9 +54,6 @@ export const Projects = () => {
             </Link>
               </button>
           </div>
-
-          <div className="project-body">
-            <div className="project-description">
               <p>
                 A solo project done as part of my Northcoders course. The
                 deployed website is the culmination of the RESTful API I created
@@ -74,10 +70,9 @@ export const Projects = () => {
 
             <div className="project-images">
               <img
+                className="project-image"
                 src={news}
                 alt="NC News screenshot"
-                width={700}
-                height={400}
               />
             </div>
           </div>
@@ -113,30 +108,7 @@ export const Projects = () => {
 
           <div className="project-body">
             <div className="project-description">
-              <p>
-                A group project done as part of my Northcoders course. The
-                deployed application is a Western-themed language learning game
-                that works on mobile and in browser; there is a RESTful API for
-                the backend and it uses React Native for the frontend.
-              </p>
-              <p>
-                The app gamifies language learning through flashcards and spaced
-                repetition. Users can learn French, German and Spanish while
-                having fun and even play against others in our multiplayer mode.
-              </p>
-            </div>
-
-            <div className="project-images">
-              <img
-                src={wordslinger}
-                alt="Wordslinger screenshot"
-                                width={300}
-                height={500}
-              />
-            </div>
-          </div>
-
-          <div className="project-links">
+              <div className="project-links">
             <button>
 
             <Link
@@ -168,6 +140,29 @@ export const Projects = () => {
             </Link>
               </button>
           </div>
+              <p>
+                A group project done as part of my Northcoders course. The
+                deployed application is a Western-themed language learning game
+                that works on mobile and in browser; there is a RESTful API for
+                the backend and it uses React Native for the frontend.
+              </p>
+              <p>
+                The app gamifies language learning through flashcards and spaced
+                repetition. Users can learn French, German and Spanish while
+                having fun and even play against others in our multiplayer mode.
+              </p>
+            </div>
+
+            <div className="project-images">
+              <img
+                className="project-image"
+                src={wordslinger}
+                alt="Wordslinger screenshot"
+              />
+            </div>
+          </div>
+
+          
         </div>
 
         {/* 360 Business Connections */}
@@ -188,6 +183,18 @@ export const Projects = () => {
 
           <div className="project-body">
             <div className="project-description">
+                        <div className="project-links">
+            <button>
+
+            <Link
+              to="https://artemisswilkinson.wixstudio.com/360business"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Website
+            </Link>
+              </button>
+          </div>
               <p>
                 A small solo project done for my internship at Digital Edge.
               </p>
@@ -208,26 +215,14 @@ export const Projects = () => {
 
             <div className="project-images">
               <img
+                className="project-image"
                 src={business}
                 alt="360 Business Connections screenshot"
-                width={700}
-                height={400}
               />
             </div>
           </div>
 
-          <div className="project-links">
-            <button>
 
-            <Link
-              to="https://artemisswilkinson.wixstudio.com/360business"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Website
-            </Link>
-              </button>
-          </div>
         </div>
 
         {/* Blank Template */}
@@ -265,6 +260,6 @@ export const Projects = () => {
     </div>
   </div> */}
       </section>
-    </section>
+
   );
 };
