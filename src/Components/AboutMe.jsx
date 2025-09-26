@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Links } from "../Components/Links";
-import myFace from "../assets/my_face.jpg";
+import myFace from "../assets/images/profilePicture.jpg";
 
 export const AboutMe = () => {
   return (
