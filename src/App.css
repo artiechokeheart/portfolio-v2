@@ -113,6 +113,12 @@ button:hover {
   text-align: left;
 }
 
+.about-me-intro-text{
+  justify-content: center;
+  align-content: center;
+
+}
+
 @media (max-width: 768px) {
   .about-me-intro {
     flex-direction: column;
