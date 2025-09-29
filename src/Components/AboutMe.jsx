@@ -23,11 +23,6 @@ export const AboutMe = () => {
               <br></br>
             </p>
             <p className="about-me-paragraph">
-              This here is my protfolio and to the right is my face. Unless you are
-              on mobile, then I hope it isn't. I can only test <b>so</b> many
-              mobiles by myself before I go bankrupt.
-            </p>
-            <p className="about-me-paragraph">
               It is often hard to summarise yourself, but if I had to, I would say:
               <ul className="about-me-list">
                 <li>I am creative.</li>
@@ -50,9 +45,8 @@ export const AboutMe = () => {
           </Link>{" "}
           to see the first portfolio I made. For portfolio v2, I have used a
           combination of both. And it looks pretty good if I do say so myself. It
-          isn't "perfect" code and I still mix up 'align-items' and
-          'align-content', but that is all part of the developer's journey--always
-          learning and improving.
+          isn't "perfect" and I sometimes write 'align-content' instead of
+          'align-items', but constant learning and development is all part of the journey. 
         </p>
           </div>
         </div>
@@ -66,7 +60,7 @@ export const AboutMe = () => {
           developers), working on my portfolio, and keeping my coding skills
           sharp. I have also grown vegetables for the first time, started areial
           gymnastics, fostered a kitten, painted a mural, and planted a edible
-hedgerow in my front garden.
+hedge in my front garden.
         </p>
       </div>
       <Links />
