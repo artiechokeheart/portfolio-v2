@@ -16,8 +16,8 @@ export const Projects = () => {
             <h2>NC News</h2>
           </div>
           <div className="project-status">
-            <h3>MISSION STATUS</h3>
-            Job Complete
+            <h3>MISSION STATUS:</h3>
+            <p>Deployed</p>
           </div>
 
           <div className="project-tools">
@@ -85,14 +85,9 @@ export const Projects = () => {
             <h2>Wordslinger</h2>
           </div>
           <div className="project-status">
-            <h3>MISSION STATUS</h3> 
-            Job Complete <br />
-            <h3>BONUS MISSION AVALIABLE </h3>
-            Restyle 
-            <br />
-           In Progress
+            <h3>MISSION STATUS:</h3>
+            <p>Deployed</p>
           </div>
-
           <div className="project-tools">
             <div className="tool">Node.js</div>
             <div className="tool">PSQL</div>
@@ -110,7 +105,6 @@ export const Projects = () => {
             <div className="project-description">
               <div className="project-links">
             <button>
-
             <Link
               to="https://wordslinger.onrender.com/api/users"
               target="_blank"
@@ -120,7 +114,6 @@ export const Projects = () => {
             </Link>
               </button>
               <button>
-
             <Link
               to="https://a-wordslinger.netlify.app/"
               target="_blank"
@@ -130,7 +123,6 @@ export const Projects = () => {
             </Link>
               </button>
               <button>
-
             <Link
               to="https://youtu.be/_sw5hRN_kWo?si=jdK0aczJmKKmoqkL&t=22"
               target="_blank"
@@ -140,6 +132,7 @@ export const Projects = () => {
             </Link>
               </button>
           </div>
+
               <p>
                 A group project done as part of my Northcoders course. The
                 deployed application is a Western-themed language learning game
@@ -150,6 +143,9 @@ export const Projects = () => {
                 The app gamifies language learning through flashcards and spaced
                 repetition. Users can learn French, German and Spanish while
                 having fun and even play against others in our multiplayer mode.
+              </p>
+              <p>
+
               </p>
             </div>
 
@@ -171,8 +167,8 @@ export const Projects = () => {
             <h2>360 Business Connections</h2>
           </div>
           <div className="project-status">
-           <h3>MISSION STATUS</h3> <br />
-            In Progress
+           <h3>MISSION STATUS:</h3>
+            <p>In Progress</p>
           </div>
 
           <div className="project-tools">
