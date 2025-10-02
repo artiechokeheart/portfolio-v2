@@ -40,8 +40,8 @@ font-family: Arial, sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px #0ff;
+  box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #0ff,
+    /* outer left magenta */ 10px 20px 80px #f0f;
   scroll-padding-top: 500px;
 }
 
@@ -64,7 +64,7 @@ font-family: Arial, sans-serif;
 
 button:hover {
   box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px #0ff;
+    /* outer left magenta */ 10px 0 80px cyan;
 }
 
 .about-me-section {
@@ -123,6 +123,16 @@ button:hover {
   .about-me-intro {
     flex-direction: column;
   }
+  .about-me-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  .about-me-intro-text {
+    flex-direction: column;
+    text-align: justify;
+    flex-direction: column;
+  }
 }
 
 .projects {
@@ -132,6 +142,7 @@ button:hover {
   justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
+  gap: 1rem;
 }
 
 .project-container {
@@ -140,12 +151,14 @@ button:hover {
   grid-template-areas:
     "title status"
     "tools status"
-    /* "links status status status" */
     "body body";
 
-  /* border: 5px solid  #0ff;
-  border-style:groove; */
+  border: 5px solid cyan;
+  border-style:outset;
   gap: 1rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
 
 }
@@ -154,6 +167,7 @@ button:hover {
   grid-area: title;
   text-align: start;
   /* border: 5px solid cyan; */
+  
 }
 
 .project-status {
@@ -161,8 +175,10 @@ button:hover {
   /* border: 5px solid cyan; */
   display: flex;
   flex-direction: column;
-
   text-align: left;
+  align-items: center;
+  border: 5px solid cyan;
+  border-style:outset;
 }
 
 
@@ -176,11 +192,12 @@ button:hover {
 .project-body {
   grid-area: body;
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  border: 5px solid cyan;
+  border-style: outset;
+  
 }
 
 .project-images {
@@ -203,17 +220,21 @@ button:hover {
   grid-area: description;
   /* border: 1px solid cyan; */
   flex: 1;
-  padding-right: 2.5%;
   display: flex;
   flex-direction: column;
   text-align: justify;
+  padding: 2%;
 }
+
+
+
 .project-links {
   grid-area: links;
   display: flex;
   padding: 2%;
   margin-bottom: 1%;
-  justify-content: center;
+  /* 
+  align-items: center; */
   gap: 5%;
 }
 
@@ -226,6 +247,20 @@ button:hover {
 @media (max-width: 768px) {
   .project-body, .about-me-intro {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "status"
+      "tools"
+      "body";
+  }
+  .project-title {
+    text-align: center;
   }
 }
 
