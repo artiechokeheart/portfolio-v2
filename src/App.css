@@ -350,7 +350,18 @@ border:#f0f 1px solid;
   }
 }
 
-svg {
+#skill-tree {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#skill-tree svg {
+  width: 100%;
+  height: auto;
   padding-top: 125px;
+}
+
+svg {
   image-resolution:inherit;
 }
