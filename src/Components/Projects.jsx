@@ -11,48 +11,47 @@ export const Projects = () => {
         <h2>Projects</h2>
       </div>
         {/* NC News */}
-        <div className="project-container">
+        <div className="project-container cyberpunk-border">
           <div className="project-title">
-            <h2>NC News</h2>
+            <h3>NC News</h3>
           </div>
-          <div className="project-status">
+          <div className="project-status cyberpunk-border-alt">
             <h3>MISSION STATUS</h3>
             Deployed
           </div>
 
           <div className="project-tools">
-            <div className="tool">Node.js</div>
-            <div className="tool">PSQL</div>
-            <div className="tool">JavaScript</div>
-            <div className="tool">Jest</div>
-            <div className="tool">React</div>
-            <div className="tool">CSS</div>
-            <div className="tool">HTML</div>
-            <div className="tool">Netlify</div>
-            <div className="tool">Render</div>
+            <ul className="tool-list">
+              <li className="tool">Node.js</li>
+              <li className="tool">PSQL</li>
+              <li className="tool">JavaScript</li>
+              <li className="tool">Jest</li>
+              <li className="tool">React</li>
+              <li className="tool">CSS</li>
+              <li className="tool">HTML</li>
+              <li className="tool">Netlify</li>
+              <li className="tool">Render</li>
+            </ul>
           </div>
-          <div className="project-body">
+          <div className="project-body cyberpunk-border-alt">
             <div className="project-description">
             <div className="project-links">
-            <button>
-            <Link
-              to="https://artemis-nc-news.netlify.app/"
+            <a
+              href="https://artemis-nc-news.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
               >
               Frontend
-            </Link>
-              </button>
-
-              <button>
-            <Link
-              to="https://artemis-be-news.onrender.com/api"
+            </a>
+            <a
+              href="https://artemis-be-news.onrender.com/api"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
             >
               Backend
-            </Link>
-              </button>
+            </a>
           </div>
               <p>
                 A solo project done as part of my Northcoders course. The
@@ -80,57 +79,56 @@ export const Projects = () => {
         </div>
 
         {/* Wordslinger */}
-        <div className="project-container">
+        <div className="project-container cyberpunk-border">
           <div className="project-title">
-            <h2>Wordslinger</h2>
+            <h3>Wordslinger</h3>
           </div>
-          <div className="project-status">
+          <div className="project-status cyberpunk-border-alt">
             <h3>MISSION STATUS</h3> 
              Deployed
           </div>
           <div className="project-tools">
-            <div className="tool">Node.js</div>
-            <div className="tool">PSQL</div>
-            <div className="tool">TypeScript</div>
-            <div className="tool">Jest</div>
-            <div className="tool">Websocket.io</div>
-            <div className="tool">React Native</div>
-            <div className="tool">CSS</div>
-            <div className="tool">HTML</div>
-            <div className="tool">Netlify</div>
-            <div className="tool">Render</div>
+            <ul className="tool-list">
+              <li className="tool">Node.js</li>
+              <li className="tool">PSQL</li>
+              <li className="tool">TypeScript</li>
+              <li className="tool">Jest</li>
+              <li className="tool">Websocket.io</li>
+              <li className="tool">React Native</li>
+              <li className="tool">CSS</li>
+              <li className="tool">HTML</li>
+              <li className="tool">Netlify</li>
+              <li className="tool">Render</li>
+            </ul>
           </div>
 
-          <div className="project-body">
+          <div className="project-body cyberpunk-border-alt">
             <div className="project-description">
               <div className="project-links">
-            <button>
-            <Link
-              to="https://wordslinger.onrender.com/api/users"
+            <a
+              href="https://wordslinger.onrender.com/api/users"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
               >
               Frontend
-            </Link>
-              </button>
-              <button>
-            <Link
-              to="https://a-wordslinger.netlify.app/"
+            </a>
+            <a
+              href="https://a-wordslinger.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
             >
               Backend
-            </Link>
-              </button>
-              <button>
-            <Link
-              to="https://youtu.be/_sw5hRN_kWo?si=jdK0aczJmKKmoqkL&t=22"
+            </a>
+            <a
+              href="https://youtu.be/_sw5hRN_kWo?si=jdK0aczJmKKmoqkL&t=22"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
               >
               Demo Video
-            </Link>
-              </button>
+            </a>
           </div>
 
               <p>
@@ -162,34 +160,34 @@ export const Projects = () => {
         </div>
 
         {/* 360 Business Connections */}
-        <div className="project-container">
+        <div className="project-container cyberpunk-border">
           <div className="project-title">
-            <h2>360 Business Connections</h2>
+            <h3>360 Business Connections</h3>
           </div>
-          <div className="project-status">
+          <div className="project-status cyberpunk-border-alt">
            <h3>MISSION STATUS</h3> <br />
             In Progress
           </div>
 
           <div className="project-tools">
-            <div className="tool">Wix SDK</div>
-            <div className="tool">Wix Studio</div>
-            <div className="tool">Wix IDE</div>
+            <ul className="tool-list">
+              <li className="tool">Wix SDK</li>
+              <li className="tool">Wix Studio</li>
+              <li className="tool">Wix IDE</li>
+            </ul>
           </div>
 
-          <div className="project-body">
+          <div className="project-body cyberpunk-border-alt">
             <div className="project-description">
                         <div className="project-links">
-            <button>
-
-            <Link
-              to="https://artemisswilkinson.wixstudio.com/360business"
+            <a
+              href="https://artemisswilkinson.wixstudio.com/360business"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link-button button-style-link"
               >
               Website
-            </Link>
-              </button>
+            </a>
           </div>
               <p>
                 A small solo project done for my internship at Digital Edge.

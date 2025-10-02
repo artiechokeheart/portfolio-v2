@@ -43,6 +43,7 @@ font-family: Arial, sans-serif;
   box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #0ff,
     /* outer left magenta */ 10px 20px 80px #f0f;
   scroll-padding-top: 500px;
+  z-index: 10;
 }
 
 .navigation {
@@ -51,18 +52,21 @@ font-family: Arial, sans-serif;
   gap: 1rem;
 }
 
-.navigation > button {
-  background-color: #090817;
+.button-style-link {
+  /* background-color: #7e7d8c; */
   border: 1px solid transparent;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   transition: border-color 0.25s;
-  width: fit-content;
-  height: fit-content;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
-button:hover {
+.button-style-link:hover {
   box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
     /* outer left magenta */ 10px 0 80px cyan;
 }
@@ -119,21 +123,6 @@ button:hover {
 
 }
 
-@media (max-width: 768px) {
-  .about-me-intro {
-    flex-direction: column;
-  }
-  .about-me-image {
-    float: none;
-    display: block;
-    margin: 0 auto 1rem;
-  }
-  .about-me-intro-text {
-    flex-direction: column;
-    text-align: justify;
-    flex-direction: column;
-  }
-}
 
 .projects {
   display: flex;
@@ -149,18 +138,77 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "title status"
-    "tools status"
-    "body body";
-
-  border: 5px solid cyan;
-  border-style:outset;
+  "title status"
+  "tools status"
+  "body body";
   gap: 1rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
 
+.cyberpunk-border {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #090817, #090817), linear-gradient(to right, #f0f, cyan);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  z-index: 1;
+}
 
+.cyberpunk-border::before, .cyberpunk-border::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid cyan;
+  z-index: -1;
+}
+
+.cyberpunk-border::before {
+  top: -10px;
+  left: -10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cyberpunk-border::after {
+  bottom: -10px;
+  right: -10px;
+  border-left: none;
+  border-top: none;
+}
+
+.cyberpunk-border-alt {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #090817, #090817), linear-gradient(to right, #f0f, cyan);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  z-index: 1;
+}
+
+.cyberpunk-border-alt::before, .cyberpunk-border-alt::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid cyan;
+  z-index: -1;
+}
+
+.cyberpunk-border-alt::before {
+  top: -10px;
+  right: -10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cyberpunk-border-alt::after {
+  bottom: -10px;
+  left: -10px;
+  border-right: none;
+  border-top: none;
 }
 
 .project-title {
@@ -177,8 +225,6 @@ button:hover {
   flex-direction: column;
   text-align: left;
   align-items: center;
-  border: 5px solid cyan;
-  border-style:outset;
 }
 
 
@@ -186,7 +232,13 @@ button:hover {
   grid-area: tools;
   display: flex;
   gap: 0.5rem;
-
+  
+}
+.project-tools .tool-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .project-body {
@@ -195,8 +247,6 @@ button:hover {
   gap: 1rem;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid cyan;
-  border-style: outset;
   
 }
 
@@ -226,8 +276,6 @@ button:hover {
   padding: 2%;
 }
 
-
-
 .project-links {
   grid-area: links;
   display: flex;
@@ -238,11 +286,7 @@ button:hover {
   gap: 5%;
 }
 
-.project-links > a {
-  justify-content: center;
-  border: 1px solid cyan;
-  padding: 2%;
-}
+
 
 @media (max-width: 768px) {
   .project-body, .about-me-intro {
@@ -254,13 +298,29 @@ button:hover {
   .project-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "title"
-      "status"
-      "tools"
-      "body";
+    "title"
+    "status"
+    "tools"
+    "body";
   }
   .project-title {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-intro {
+    flex-direction: column;
+  }
+  .about-me-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  .about-me-intro-text {
+    flex-direction: column;
+    text-align: justify;
+    flex-direction: column;
   }
 }
 

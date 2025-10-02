@@ -14,7 +14,7 @@ export const AboutMe = () => {
           </div>
 
         <div className="about-me-intro-text">
-          <img className="about-me-image" src={myFace} alt={"My Face"} />
+          <img className="about-me-image" src={myFace} alt="A smiling headshot of Artemis." />
           <div className="about-me-intro-paragraphs">
             <p className="about-me-paragraph">
               Hi there! If you haven't guessed this already, I am Artemis. (Yes,
