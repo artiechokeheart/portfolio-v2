@@ -42,7 +42,6 @@ font-family: Arial, sans-serif;
   width: 100%;
   box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #0ff,
     /* outer left magenta */ 10px 20px 80px #f0f;
-  scroll-padding-top: 500px;
   z-index: 10;
 }
 
@@ -50,6 +49,7 @@ font-family: Arial, sans-serif;
   align-self: center;
   display: flex;
   gap: 1rem;
+padding: 1rem;
 }
 
 /* Shared button styling */
@@ -101,8 +101,9 @@ border:#f0f 1px solid;
   display: flex;
   flex-direction: column;
   text-align: left;
-    margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -154,8 +155,9 @@ border:#f0f 1px solid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 1rem;
 }
 
@@ -256,6 +258,7 @@ border:#f0f 1px solid;
 .project-tools {
   grid-area: tools;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   
 }
@@ -263,6 +266,7 @@ border:#f0f 1px solid;
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -304,37 +308,35 @@ border:#f0f 1px solid;
 .project-links {
   grid-area: links;
   display: flex;
-  padding: 2%;
   margin-bottom: 1%;
   /* 
   align-items: center; */
-  gap: 5%;
+  gap: 2%;
 }
 
 
 
-@media (max-width: 768px) {
-  .project-body, .about-me-intro {
-    flex-direction: column;
-  }
-}
-
+/* Tablet and smaller */
 @media (max-width: 900px) {
   .project-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-    "title"
-    "status"
-    "tools"
-    "body";
+      "title"
+      "status"
+      "tools"
+      "body";
   }
   .project-title {
     text-align: center;
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .about-me-intro {
+  .about-me-section, .projects {
+    width: 90%;
+  }
+  .project-body, .about-me-intro {
     flex-direction: column;
   }
   .about-me-image {
@@ -342,10 +344,9 @@ border:#f0f 1px solid;
     display: block;
     margin: 0 auto 1rem;
   }
-  .about-me-intro-text {
-    flex-direction: column;
-    text-align: justify;
-    flex-direction: column;
+  .project-links {
+    justify-items: center;
+    align-self:center;
   }
 }
 
