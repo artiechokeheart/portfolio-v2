@@ -16,8 +16,8 @@ export const Projects = () => {
             <h2>NC News</h2>
           </div>
           <div className="project-status">
-            <h3>MISSION STATUS:</h3>
-            <p>Deployed</p>
+            <h3>MISSION STATUS</h3>
+            Deployed
           </div>
 
           <div className="project-tools">
@@ -85,8 +85,8 @@ export const Projects = () => {
             <h2>Wordslinger</h2>
           </div>
           <div className="project-status">
-            <h3>MISSION STATUS:</h3>
-            <p>Deployed</p>
+            <h3>MISSION STATUS</h3> 
+             Deployed
           </div>
           <div className="project-tools">
             <div className="tool">Node.js</div>
@@ -167,8 +167,8 @@ export const Projects = () => {
             <h2>360 Business Connections</h2>
           </div>
           <div className="project-status">
-           <h3>MISSION STATUS:</h3>
-            <p>In Progress</p>
+           <h3>MISSION STATUS</h3> <br />
+            In Progress
           </div>
 
           <div className="project-tools">

@@ -9,7 +9,6 @@ export const AboutMe = () => {
           <div className="about-me-headings">
             <h2>
               Full Stack
-              <br />
               Junior Developer
             </h2>
           </div>

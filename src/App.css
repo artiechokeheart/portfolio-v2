@@ -123,6 +123,16 @@ button:hover {
   .about-me-intro {
     flex-direction: column;
   }
+  .about-me-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  .about-me-intro-text {
+    flex-direction: column;
+    text-align: justify;
+    flex-direction: column;
+  }
 }
 
 .projects {
@@ -165,9 +175,8 @@ button:hover {
   /* border: 5px solid cyan; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   align-items: center;
-  gap: 0.5rem;
   border: 5px solid cyan;
   border-style:outset;
 }
@@ -177,7 +186,7 @@ button:hover {
   grid-area: tools;
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
+
 }
 
 .project-body {
@@ -238,6 +247,20 @@ button:hover {
 @media (max-width: 768px) {
   .project-body, .about-me-intro {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "status"
+      "tools"
+      "body";
+  }
+  .project-title {
+    text-align: center;
   }
 }
 
