@@ -52,23 +52,48 @@ font-family: Arial, sans-serif;
   gap: 1rem;
 }
 
+/* Shared button styling */
 .button-style-link {
-  /* background-color: #7e7d8c; */
   border: 1px solid transparent;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   transition: border-color 0.25s;
   padding: 0.6em 1.2em;
-  border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  z-index: 1; /* Ensure button content is above pseudo-elements */
 }
 
 .button-style-link:hover {
-  box-shadow: 0 0 50px #fff, /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px cyan;
+border:#f0f 1px solid;
+}
+
+/* Cyberpunk corner pieces for buttons */
+.button-style-link::before,
+.button-style-link::after {
+  content: '';
+  position: absolute;
+  width: 15px; /* Smaller corners for buttons */
+  height: 15px; /* Smaller corners for buttons */
+  border: 2px solid cyan; /* Match the border color */
+  z-index: -1; /* Place behind the button content */
+}
+
+.button-style-link::before {
+  top: -5px; /* Adjust position */
+  left: -5px; /* Adjust position */
+  border-right: none;
+  border-bottom: none;
+}
+
+.button-style-link::after {
+  bottom: -5px; /* Adjust position */
+  right: -5px; /* Adjust position */
+  border-left: none;
+  border-top: none;
 }
 
 .about-me-section {
