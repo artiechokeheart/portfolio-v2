@@ -1,8 +1,6 @@
 export const Circuit = () => {
   return (
     <svg
-      width="1241"
-      height="679"
       viewBox="0 0 1241 679"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
